@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>InStalker</title>
+    <link rel="stylesheet" href="css/instalker.min.css">
+    <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="css/jquerymobile_structure.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquerymobile.js"></script>
+    <script src="js/script.js"></script>
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+
+
+
+    <section data-role="page" id="home" data-theme="c">
+        <div data-role="header" data-theme="c">
+            <div class="logo"><a href="#home"><img src="images/logo.png" alt="InStalker"></a></div>
+        </div><!-- header -->
+        <article class="ui-content">
+            <h1>Welcome to <strong>InStalker</strong>, the app that sees everything!</h1>
+            <p>Before you start digging up some dirt, you need to log into your Instagram account. Don't worry, we don't store any data from our users!</p>
+            <a id="instagramLogin" href="#stalked" class="ui-btn ui-corner-all">Log In</a>
+        </article><!-- content -->
+    </section><!-- home -->
+
+    <section data-role="page" id="stalked" data-theme="c">
+        <div data-role="header" data-theme="c">
+            <div class="logo"><a href="#home"><img src="images/logo.png" alt="InStalker"></a></div>
+        </div><!-- header -->
+        <article class="ui-content">
+            <h4>First, select who you suspect that is "liking" too much someone else's photos</h4>
+            <small>* If you're targeting someone you don't follow, the profile must be public</small>
+            <form class="ui-filterable">
+                    <input id="autocomplete-input" data-type="search" placeholder="Type the username...">
+                <a href="#target" class="ui-btn ui-corner-all">Go!</a>
+            </form>
+            <ul id="stalkedAutocomplete" data-role="listview" data-inset="true" data-filter="true" data-input="#autocomplete-input"></ul>
+        </article><!-- content -->
+    </section><!-- home -->
+
+    <section data-role="page" id="target" data-theme="c">
+        <div data-role="header" data-theme="c">
+            <div class="logo"><a href="#home"><img src="images/logo.png" alt="InStalker"></a></div>
+        </div><!-- header -->
+        <article class="ui-content">
+            <h4>Ok, now it's time to select whose photos you think @username might be liking too much. Or not.</h4>
+            <small>* Again, if you're targeting someone you don't follow, the profile must be public</small>
+            <form class="ui-filterable">
+                    <input id="autocomplete-input" data-type="search" placeholder="Type the username...">
+                <a href="#list" class="ui-btn ui-corner-all">Stalk!</a>
+            </form>
+            <ul id="targetAutocomplete" data-role="listview" data-inset="true" data-filter="true" data-input="#autocomplete-input"></ul>
+        </article><!-- content -->
+    </section><!-- home -->
+
+    <section data-role="page" id="list" data-theme="c">
+        <div data-role="header" data-theme="c">
+            <div class="logo"><a href="#home"><img src="images/logo.png" alt="InStalker"></a></div>
+        </div><!-- header -->
+        <article class="ui-content">
+            <h4>Stalking succeeded!</h4>
+            <h5>Here's the list of the latest photos that @username liked from @fulaninho</h5>
+            <div class="media">
+                <div class="mediaHeader">
+                    <a href=""><img class="userPhoto" src="images/user_teste.jpg" alt=""></a>
+                    <a href="#" class="userName">fulaninho</a>
+                    <span class="timePublished">9h</span>
+                </div>
+                <div class="clear"></div>
+                <div class="photo">
+                    <a href="#"><img src="images/teste.jpg" alt="teste"></a>
+                </div>
+            </div>
+            <div class="media">
+                <div class="mediaHeader">
+                    <a href=""><img class="userPhoto" src="images/user_teste.jpg" alt=""></a>
+                    <a href="#" class="userName">fulaninho</a>
+                    <span class="timePublished">9h</span>
+                </div>
+                <div class="clear"></div>
+                <div class="photo">
+                    <a href="#"><img src="images/teste.jpg" alt="teste"></a>
+                </div>
+            </div>
+            <div class="media">
+                <div class="mediaHeader">
+                    <a href=""><img class="userPhoto" src="images/user_teste.jpg" alt=""></a>
+                    <a href="#" class="userName">fulaninho</a>
+                    <span class="timePublished">9h</span>
+                </div>
+                <div class="clear"></div>
+                <div class="photo">
+                    <a href="#"><img src="images/teste.jpg" alt="teste"></a>
+                </div>
+            </div>
+            <div class="media">
+                <div class="mediaHeader">
+                    <a href=""><img class="userPhoto" src="images/user_teste.jpg" alt=""></a>
+                    <a href="#" class="userName">fulaninho</a>
+                    <span class="timePublished">9h</span>
+                </div>
+                <div class="clear"></div>
+                <div class="photo">
+                    <a href="#"><img src="images/teste.jpg" alt="teste"></a>
+                </div>
+            </div>
+        </article><!-- content -->
+    </section><!-- home -->
+
+    <div id="footer" data-role="footer" data-theme="c" class="ui-link">
+    <ul>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Termos</a></li>
+    </ul>
+    </div><!-- footer -->
+    <script src="js/instalker.js"></script>
+</body>
+</html>
